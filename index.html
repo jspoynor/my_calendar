@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Outlook Calendar</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calendar-container {
+      width: 100%;
+      height: 100%;
+      max-width: 1000px;
+      max-height: 800px;
+      overflow: hidden;
+      border: none;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+
+      /* Simulate dark mode with CSS filters */
+      filter: invert(1) hue-rotate(180deg) contrast(1.1) brightness(0.9);
+    }
+  </style>
+</head>
+<body>
+  <div class="calendar-container">
+    <iframe src="https://outlook.office365.com/calendar/published/68730845cf374a7593134b817e5b412e@usf.edu/2d5596dc1dca4a6ea1e4847780e3678e13499684564429557263/calendar.html" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
